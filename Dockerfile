@@ -6,4 +6,4 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT} dashboard:app"]
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT} dashboard:server"]
